@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Insider</string>
+    <string name="dot"> \u2022 </string>
+    <string name="dollar">\u002410.99</string>
+</resources>

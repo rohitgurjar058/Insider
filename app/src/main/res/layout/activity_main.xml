@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context="com.example.rohit.insider.MainActivity">
+
+    <com.mancj.materialsearchbar.MaterialSearchBar
+        app:mt_hint="Search for Artist"
+        app:mt_maxSuggestionsCount="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchBar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Search Song on Above Search Bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView"
+        android:visibility="visible"
+        android:textColor="#99FFFFFF"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <TextView
+        android:text="Make Sure your Internet Connection is ON"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView"
+        android:id="@+id/textView1"
+        android:layout_marginTop="2dp"
+        android:visibility="visible"
+        android:textColor="#99FFFFFF"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/searchBar"
+        android:scrollbars="vertical"
+        android:focusableInTouchMode="true"
+        android:id="@+id/recycle">
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:id="@+id/cordinator_layout">
+
+    </android.support.design.widget.CoordinatorLayout>
+</RelativeLayout>

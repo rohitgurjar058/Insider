@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/artist_pic"
+            android:background="#30000000"
+            android:padding="2dp"
+            android:id="@+id/artwork_img" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.5">
+
+                <TextView
+                    android:text="Roll in the Deep"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="2dp"
+                    android:lines="1"
+                    android:textSize="15dp"
+                    android:textColor="#FFF"
+                    android:id="@+id/track_name"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Adele "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#80FFFFFF"
+                            android:id="@+id/artist_name" />
+
+                        <TextView
+                            android:text="@string/dot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#80FFFFFF"/>
+
+                        <TextView
+                            android:text=" 03:12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#80FFFFFF"
+                            android:id="@+id/duration" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/genre_name"
+                    android:text="pop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#80FFFFFF"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/price"
+            android:text="@string/dollar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|center"
+            android:layout_marginRight="10dp"
+            android:textColor="#FFF"
+            android:textSize="11dp"
+            android:layout_weight="1" />
+
+</LinearLayout>
